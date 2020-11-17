@@ -2,21 +2,33 @@
 
 ## Single Converter
 
-BooleanToVisibilityConverter
+### BooleanToVisibilityConverter
+`code behind`
 ```csharp
-public class BooleanToVisibilityConverter : IValueConverter
+namespance Ncoresoft.Wpfbase.Converters.SingleConverter
 {
-  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+  public class BooleanToVisibilityConverter : IValueConverter
   {
-      return value.Equals(true) ? Visibility.Visible : Visibility.Collapsed;
-  }
-  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-  {
-      throw new NotImplementedException();
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return value.Equals(true) ? Visibility.Visible : Visibility.Collapsed;
+    }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
   }
 }
 ```
-BooleanToCollapsedConverter
+`app.xaml`
+```xaml
+<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+  <cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+</>
+```
+
+### BooleanToCollapsedConverter
+`code behind`
 ```csharp
 public class BooleanToCollapsedConverter : IValueConverter
 {
