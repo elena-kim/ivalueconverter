@@ -41,5 +41,32 @@ public class BooleanToCollapsedConverter : IValueConverter
   }
 }
 ```
+`app.xaml`
+```xaml
+<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+  <cvt:BooleanToCollapsedConverter x:Key="BooleanToCollapsedConverter"/>
+</>
+```
 
+### EqualsVisibilityConverter
+`code behind`
+```csharp
+public class EqualsVisibilityConverter : IValueConverter
+{
+  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+      return value.Equals(parameter) ? Visibility.Visible : Visibility.Collapsed;
+  }
+  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+       throw new NotImplementedException();
+  }
+}
+```
+`app.xaml`
+```xaml
+<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+  <cvt:EqualsVisibilityConverter x:Key="EqualsVisibilityConverter"/>
+</>
+```
 ## Multiple Converter
