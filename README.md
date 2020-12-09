@@ -69,4 +69,28 @@ public class EqualsVisibilityConverter : IValueConverter
   <cvt:EqualsVisibilityConverter x:Key="EqualsVisibilityConverter"/>
 </>
 ```
+
+### StringExistsToBooleanConverter
+`code behind`
+```csharp
+public class StringExistsToBooleanConverter : IValueConverter
+{
+  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+      return !string.IsNullOrWhiteSpace(value?.ToString());
+  }
+  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+      throw new NotImplementedException();
+  }
+}
+```
+`app.xaml`
+```xaml
+<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+  <cvt:StringExistsToBooleanConverter x:Key="StringExistsToBooleanConverter"/>
+</>
+```
+
 ## Multiple Converter
+TBD
