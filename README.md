@@ -93,4 +93,4 @@ public class StringExistsToBooleanConverter : IValueConverter
 ```
 
 ## Multiple Converter
-TBD
+TBD...
