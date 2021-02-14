@@ -4,7 +4,7 @@
 ### BooleanToVisibilityConverter
 `code behind`
 ```csharp
-namespance Ncoresoft.Wpfbase.Converters.SingleConverter
+namespace Ncoresoft.Wpfbase.Converters.SingleConverter
 {
   public class BooleanToVisibilityConverter : IValueConverter
   {
