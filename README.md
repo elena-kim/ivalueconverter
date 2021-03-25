@@ -1,13 +1,14 @@
 # ivalueconverter
 
 ## Overview
+
+> All of the examples below are used in __League of Legends__ [here.](https://github.com/devncore/leagueoflegends/tree/master/Leagueoflegends/Leagueoflegends.Converter/Windows/Converters)
+
 - [Single Converter](#single-converter)
 - [Multiple Converter](#multiple-converter)
 <br />
 
 ## Single Converter
-All of the examples below are used in __League of Legends__ [here.](https://github.com/devncore/leagueoflegends/tree/master/Leagueoflegends/Leagueoflegends.Converter/Windows/Converters)
-
 - [BooleanToVisibilityConverter](#booleantovisibilityconverter)
 - [BooleanToCollapsedConverter](#booleantocollapsedconverter)
 - [EqualsVisibilityConverter](#equalsvisibilityconverter)
@@ -167,4 +168,29 @@ public class WidthPercentageConverter : MarkupExtension, IValueConverter
 <br />
 
 ## Multiple Converter
-TBD..
+- [MultiValueBooleanConverter](#multivaluebooleanconverter)
+
+### MultiValueBooleanConverter
+`code behind`
+```csharp
+public class MultiValueBooleanConverter : IMultiValueConverter
+    {
+        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
+        {
+            return ((bool)values[0]==true && !string.IsNullOrWhiteSpace(values[1]?.ToString()));
+        }
+
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+```
+<br />
+
+`app.xaml`
+```xaml
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
+  <cvt:MultiValueBooleanConverter x:Key="MultiValueBooleanConverter"/>
+</>
+```
