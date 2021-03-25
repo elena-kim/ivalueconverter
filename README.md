@@ -1,10 +1,24 @@
 # ivalueconverter
+
+## Overview
+- [Single Converter](#single-converter)
+- [Multiple Converter](#multiple-converter)
+<br />
+
 ## Single Converter
+All of the examples below are used in __League of Legends__ [here.](https://github.com/devncore/leagueoflegends/tree/master/Leagueoflegends/Leagueoflegends.Converter/Windows/Converters)
+
+- [BooleanToVisibilityConverter](#booleantovisibilityconverter)
+- [BooleanToCollapsedConverter](#booleantocollapsedconverter)
+- [EqualsVisibilityConverter](#equalsvisibilityconverter)
+- [StringExistsToBooleanConverter](#stringexiststobooleanconverter)
+- [WidthPercentageConverter](#widthpercentageconverter)
+<br />
 
 ### BooleanToVisibilityConverter
 `code behind`
 ```csharp
-namespace Ncoresoft.Wpfbase.Converters.SingleConverter
+namespace Leagueoflegends.Windows.Converters
 {
   public class BooleanToVisibilityConverter : IValueConverter
   {
@@ -19,12 +33,15 @@ namespace Ncoresoft.Wpfbase.Converters.SingleConverter
   }
 }
 ```
+<br />
+
 `app.xaml`
 ```xaml
-<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
   <cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 </>
 ```
+<br />
 
 ### BooleanToCollapsedConverter
 `code behind`
@@ -41,12 +58,15 @@ public class BooleanToCollapsedConverter : IValueConverter
   }
 }
 ```
+<br />
+
 `app.xaml`
 ```xaml
-<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
   <cvt:BooleanToCollapsedConverter x:Key="BooleanToCollapsedConverter"/>
 </>
 ```
+<br />
 
 ### EqualsVisibilityConverter
 `code behind`
@@ -63,12 +83,15 @@ public class EqualsVisibilityConverter : IValueConverter
   }
 }
 ```
+<br />
+
 `app.xaml`
 ```xaml
-<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
   <cvt:EqualsVisibilityConverter x:Key="EqualsVisibilityConverter"/>
 </>
 ```
+<br />
 
 ### StringExistsToBooleanConverter
 `code behind`
@@ -85,12 +108,15 @@ public class StringExistsToBooleanConverter : IValueConverter
   }
 }
 ```
+<br />
+
 `app.xaml`
 ```xaml
-<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
   <cvt:StringExistsToBooleanConverter x:Key="StringExistsToBooleanConverter"/>
 </>
 ```
+<br />
 
 ### WidthPercentageConverter
 `code behind`
@@ -119,21 +145,26 @@ public class WidthPercentageConverter : MarkupExtension, IValueConverter
         }
     }
 ```
+<br />
+
 `app.xaml`
 ```xaml
-<... xmlns:cvt="Ncoresoft.Wpfbase.Converters.SingleConverter;component">
+<... xmlns:cvt="Leagueoflegends.Windows.Converters;component">
   <cvt:WidthPercentageConverter x:Key="WidthPercentageConverter"/>
 </>
 ```
+<br />
+
 `ResourceDictionary`
 ```xaml
- <Style TargetType="{x:Type TextBox}" x:Key="CTRL.TXT.REPLAY.LOCATION">
+ <Style TargetType="{x:Type TextBox}" x:Key="TXT.REPLAY">
  ...
         <Setter Property="Width" Value="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=ActualWidth, 
                 Converter={StaticResource WidthPercentageConverter}, ConverterParameter=0.8}"/>
  ...
  </Style>
-
 ```
+<br />
+
 ## Multiple Converter
 TBD..
