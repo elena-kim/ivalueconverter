@@ -1,8 +1,23 @@
 # ivalueconverter
+### About us
+
+> &nbsp; :adult: __James Lee__ &nbsp;&nbsp; [Github](https://github.com/devncore-james) &nbsp;&nbsp; james.lee@devncore.org  
+> &nbsp; :woman: __Elena Kim__ &nbsp;&nbsp; [Github](https://github.com/devncore-elena) &nbsp;&nbsp; elena.kim@devncore.org
+
+We are very ordinary developers, so we need to communicate with you.   
+You can always share information with us and we are looking forward to it.  
+
+##### _Open Source &nbsp; https://github.com/devncore/devncore   &nbsp;&nbsp;   Official Website &nbsp; https://devncore.org_ 
+
+### License Policy
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+
+***
 
 ## Overview
 
-> All of the examples below are used in __League of Legends__ [here.](https://github.com/devncore/leagueoflegends/tree/master/Leagueoflegends/Leagueoflegends.Converter/Windows/Converters)
+> All of the examples below are used in __League of Legends__. [here.](https://github.com/devncore/leagueoflegends/tree/master/Leagueoflegends/Leagueoflegends.Converter/Windows/Converters)
 
 - [Single Converter](#single-converter)
 - [Multiple Converter](#multiple-converter)
@@ -123,28 +138,28 @@ public class StringExistsToBooleanConverter : IValueConverter
 `code behind`
 ```csharp
 public class WidthPercentageConverter : MarkupExtension, IValueConverter
+{
+    private static WidthPercentageConverter _instance;
+
+    #region IValueConverter Members
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        private static WidthPercentageConverter _instance;
-
-        #region IValueConverter Members
-
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return System.Convert.ToDouble(value) * System.Convert.ToDouble(parameter);
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
-
-        public override object ProvideValue(IServiceProvider serviceProvider)
-        {
-            return _instance ?? (_instance = new WidthPercentageConverter());
-        }
+        return System.Convert.ToDouble(value) * System.Convert.ToDouble(parameter);
     }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+
+    #endregion
+
+    public override object ProvideValue(IServiceProvider serviceProvider)
+    {
+        return _instance ?? (_instance = new WidthPercentageConverter());
+    }
+}
 ```
 <br />
 
@@ -174,17 +189,17 @@ public class WidthPercentageConverter : MarkupExtension, IValueConverter
 `code behind`
 ```csharp
 public class MultiValueBooleanConverter : IMultiValueConverter
+{
+    public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
     {
-        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
-        {
-            return ((bool)values[0]==true && !string.IsNullOrWhiteSpace(values[1]?.ToString()));
-        }
-
-        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        return ((bool)values[0]==true && !string.IsNullOrWhiteSpace(values[1]?.ToString()));
     }
+
+    public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
 ```
 <br />
 
