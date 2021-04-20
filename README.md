@@ -15,5 +15,16 @@ You can always share information with us and we are looking forward to it.
 ***
 
 ## IValueConverter
-**Namespace**: `System.Windows.Data`  
-**Assembly**: `PresentationFramework.dll`  
+
+|Namespace|Assembly|Method|
+|:--------|:-------|:-----|
+|`System.Windows.Data`|`PresentationFramework.dll`|Convert, ConvertBack|
+
+**IValueConverter** provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
+When source object type and target object type are different, IValueConverter act like middlemen.
+
+***
+
+## Reference
+[:bookmark_tabs:](https://www.codeproject.com/Tips/868163/IValueConverter-Example-and-Usage-in-WPF) **CODE PROJECT** &nbsp; <ins>IValueConverter Example and Usage in WPF</ins>  
+[:bookmark_tabs:](https://docs.microsoft.com/en-ca/dotnet/api/system.windows.data.ivalueconverter?view=net-5.0) **Microsoft Docs** &nbsp; <ins>IValueConverter Interface</ins>
