@@ -23,6 +23,7 @@ You can always share information with us and we are looking forward to it.
 **IValueConverter** provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
 When source object type and target object type are different, IValueConverter act like middlemen.
 
+TBD.
 ***
 
 ## Reference
