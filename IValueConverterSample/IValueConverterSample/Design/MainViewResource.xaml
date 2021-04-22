@@ -23,7 +23,7 @@
 		<Setter Property="Background" Value="#000000"/>
 	</Style>
 
-	<Style TargetType="{x:Type ToggleButton}" x:Key="TGL.AUTH">
+	<Style TargetType="{x:Type ToggleButton}" x:Key="TGL.CLICK">
 		<Setter Property="Width" Value="60"/>
 		<Setter Property="Height" Value="30"/>
 		<Setter Property="Background" Value="#1E2328"/>
@@ -62,20 +62,19 @@
 							<Setter TargetName="border" Property="Background" Value="{StaticResource LGB.TGL.BG.OVER}"/>
 							<Setter TargetName="border2" Property="BorderThickness" Value="0"/>
 						</Trigger>
-						<Trigger Property="IsEnabled" Value="False">
-							<Setter TargetName="border" Property="BorderBrush" Value="#5C5B57"/>
-							<Setter TargetName="border" Property="Background" Value="#1E2328"/>
-							<Setter Property="Foreground" Value="#5C5B57"/>
-						</Trigger>
-						<Trigger Property="IsEnabled" Value="True">
-							<Setter Property="Cursor" Value="Hand"/>
-						</Trigger>
-						<Trigger Property="IsChecked" Value="True">
-							<Setter Property="IsEnabled" Value="False"/>
-						</Trigger>
 					</ControlTemplate.Triggers>
 				</ControlTemplate>
 			</Setter.Value>
 		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type TextBlock}" x:Key="TXB.HELLO">
+		<Setter Property="Text" Value="Hello!"/>
+		<Setter Property="Foreground" Value="#EFE6D4"/>
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="FontSize" Value="18"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="Margin" Value="100 22 0 0"/>
+		<Setter Property="Visibility" Value="{Binding ElementName=tgl, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 	</Style>
 </ResourceDictionary>

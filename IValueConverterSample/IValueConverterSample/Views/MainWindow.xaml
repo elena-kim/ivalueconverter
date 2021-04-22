@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Style="{StaticResource WIN.MAIN}">
     <Grid>
-		<ToggleButton Style="{StaticResource TGL.AUTH}"/>
+		<ToggleButton x:Name="tgl" Style="{StaticResource TGL.CLICK}"/>
+		<TextBlock Style="{StaticResource TXB.HELLO}"/>
 	</Grid>
 </Window>
