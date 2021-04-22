@@ -24,7 +24,7 @@ Value converters provides a way to apply custom logic to a [binding](https://git
 When source object type and target object type are different, value converters act like middlemen.  
 Converter class must implement **IValueConverter** interface, which consists of two methods, `Convert()` and `ConvertBack()`.
 
-**Convert** method gets called when source updates target object.
+> **Convert** method gets called when source updates target object.
 ```c#
 public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
 
@@ -34,10 +34,10 @@ public object Convert (object value, Type targetType, object parameter, System.G
 //   parameter: The converter parameter to use.
 //   culture: The culture to use in the converter.
 // return:
-//     A converted value. If the method returns null, the valid null value is used.
+//   A converted value. If the method returns null, the valid null value is used.
 ```  
 
-**ConvertBack** method gets called when target updates source object.
+> **ConvertBack** method gets called when target updates source object.
 ```c#
 public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
 
@@ -46,7 +46,8 @@ public object ConvertBack (object value, Type targetType, object parameter, Syst
 //   targetType: The type to convert to.
 //   parameter: The converter parameter to use.
 //   culture: The culture to use in the converter.
-// return: A converted value. If the method returns null, the valid null value is used.
+// return:
+//   A converted value. If the method returns null, the valid null value is used.
 ```  
 ***
 
