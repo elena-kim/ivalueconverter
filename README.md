@@ -26,7 +26,7 @@ Converter class must implement **IValueConverter** interface, which consists of 
 
 _**Convert** method gets called when source updates target object._
 ```c#
-public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
+public object Convert (object value, Type targetType, object parameter, CultureInfo culture);
 
 // parameters:
 //   value: The value produced by the binding source.
@@ -39,7 +39,7 @@ public object Convert (object value, Type targetType, object parameter, System.G
 
 _**ConvertBack** method gets called when target updates source object._
 ```c#
-public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
+public object ConvertBack (object value, Type targetType, object parameter, CultureInfo culture);
 
 // parameters:
 //   value: The value that is produced by the binding target.
