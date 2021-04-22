@@ -16,15 +16,15 @@ You can always share information with us and we are looking forward to it.
 
 ## IValueConverter
 
-|Namespace|Assembly|Method|
-|:--------|:-------|:-----|
-|`System.Windows.Data`|`PresentationFramework.dll`|Convert, ConvertBack|
+|Namespace|Assembly|
+|:--------|:-------|
+|`System.Windows.Data`|`PresentationFramework.dll`|
 
 Value converters provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
 When source object type and target object type are different, value converters act like middlemen.  
 Converter class must implement **IValueConverter** interface, which consists of two methods, `Convert()` and `ConvertBack()`.
 
-> **Convert** method gets called when source updates target object.
+_**Convert** method gets called when source updates target object._
 ```c#
 public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
 
@@ -37,7 +37,7 @@ public object Convert (object value, Type targetType, object parameter, System.G
 //   A converted value. If the method returns null, the valid null value is used.
 ```  
 
-> **ConvertBack** method gets called when target updates source object.
+_**ConvertBack** method gets called when target updates source object._
 ```c#
 public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
 
