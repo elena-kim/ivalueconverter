@@ -20,10 +20,34 @@ You can always share information with us and we are looking forward to it.
 |:--------|:-------|:-----|
 |`System.Windows.Data`|`PresentationFramework.dll`|Convert, ConvertBack|
 
-**IValueConverter** provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
-When source object type and target object type are different, IValueConverter act like middlemen.
+Value converters provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
+When source object type and target object type are different, value converters act like middlemen.  
+Converter class must implement **IValueConverter** interface, which consists of two methods, `Convert()` and `ConvertBack()`.
 
-TBD.
+**Convert** method gets called when source updates target object.
+```c#
+public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
+
+// parameters:
+//   value: The value produced by the binding source.
+//   targetType: The type of the binding target property.
+//   parameter: The converter parameter to use.
+//   culture: The culture to use in the converter.
+// return:
+//     A converted value. If the method returns null, the valid null value is used.
+```  
+
+**ConvertBack** method gets called when target updates source object.
+```c#
+public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);
+
+// parameters:
+//   value: The value that is produced by the binding target.
+//   targetType: The type to convert to.
+//   parameter: The converter parameter to use.
+//   culture: The culture to use in the converter.
+// return: A converted value. If the method returns null, the valid null value is used.
+```  
 ***
 
 ## Reference
