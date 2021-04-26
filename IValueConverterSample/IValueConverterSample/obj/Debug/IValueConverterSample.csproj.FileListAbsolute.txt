@@ -17,3 +17,6 @@ C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\
 C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\IValueConverterSample_MarkupCompile.lref
 C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\Template\ConverterResource.baml
+C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\Template\ColorResource.baml
+C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\Template\IconResource.baml
+C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\Template\PathResource.baml

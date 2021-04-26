@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\App.xaml
-3450862752
+61412728462
 
-8-1785579066
+101807376192
 13152784993
-Design\MainViewResource.xaml;Template\ConverterResource.xaml;Views\MainWindow.xaml;
+Template\ColorResource.xaml;Template\IconResource.xaml;Design\MainViewResource.xaml;Template\ConverterResource.xaml;Template\PathResource.xaml;Views\MainWindow.xaml;
 
-True
+False
 

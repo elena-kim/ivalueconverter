@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:IValueConverterSample.Template">
+
+	<LinearGradientBrush x:Key="LGB.TGL.BDR" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="#C8AA6E" Offset="0"/>
+		<GradientStop Color="#795c28" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.TGL.BDR.OVER" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="#f0e6d7" Offset="0"/>
+		<GradientStop Color="#c99d3d" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.TGL.BG.OVER" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="#1e232a" Offset="0"/>
+		<GradientStop Color="#443e2e" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.THB.FG" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#B79248" Offset="0"/>
+		<GradientStop Color="#997530" Offset="0.5"/>
+		<GradientStop Color="#74592B" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.THB.FG.OVER" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#EDE1C8" Offset="0"/>
+		<GradientStop Color="#DCC088" Offset="0.5"/>
+		<GradientStop Color="#CBA14A" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.THB.FG.DRAG" StartPoint="0.5, 0" EndPoint="0.5, 1">
+		<GradientStop Color="#473814" Offset="0"/>
+		<GradientStop Color="#57421B" Offset="0.5"/>
+		<GradientStop Color="#684E23" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.SLD.FG" StartPoint="0, 0.5" EndPoint="1, 0.5">
+		<GradientStop Color="#463714" Offset="0"/>
+		<GradientStop Color="#58471D" Offset="0.5"/>
+		<GradientStop Color="#695625" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.SLD.FG.OVER" StartPoint="0, 0.5" EndPoint="1, 0.5">
+		<GradientStop Color="#795B28" Offset="0"/>
+		<GradientStop Color="#C1963B" Offset="0.5"/>
+		<GradientStop Color="#C8AA6D" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.SLD.FG.DRAG" StartPoint="0, 0.5" EndPoint="1, 0.5">
+		<GradientStop Color="#685524" Offset="0"/>
+		<GradientStop Color="#55441B" Offset="0.5"/>
+		<GradientStop Color="#463714" Offset="1"/>
+	</LinearGradientBrush>
+
+	<LinearGradientBrush x:Key="LGB.TOOL.BDR" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="#614a1f" Offset="0"/>
+		<GradientStop Color="#463714" Offset="1"/>
+	</LinearGradientBrush>
+</ResourceDictionary>

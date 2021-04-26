@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Style="{StaticResource WIN.MAIN}">
     <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
 		<ToggleButton x:Name="tgl" Style="{StaticResource TGL.CLICK}"/>
 		<TextBlock Style="{StaticResource TXB.HELLO}"/>
+
+		<Control Style="{StaticResource IN.INPUT}"/>
 	</Grid>
 </Window>

@@ -6,6 +6,9 @@
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="/IValueConverterSample;component/Template/ConverterResource.xaml"/>
+				<ResourceDictionary Source="/IValueConverterSample;component/Template/PathResource.xaml"/>
+				<ResourceDictionary Source="/IValueConverterSample;component/Template/IconResource.xaml"/>
+				<ResourceDictionary Source="/IValueConverterSample;component/Template/ColorResource.xaml"/>
 				<ResourceDictionary Source="/IValueConverterSample;component/Design/MainViewResource.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
