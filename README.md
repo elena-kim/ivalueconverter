@@ -53,7 +53,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 
 ## Sample
 ### BooleanToVisibilityConverter
-#### Converter
+#### Converter.cs
 ```c#
 public class BooleanToVisibilityConverter : IValueConverter
 {
@@ -68,7 +68,7 @@ public class BooleanToVisibilityConverter : IValueConverter
   }
 }
 ```
-#### Resource
+#### ConverterResource.xaml
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
