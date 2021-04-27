@@ -57,15 +57,15 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ```c#
 public class BooleanToVisibilityConverter : IValueConverter
 {
-  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-  {
-    return value.Equals(true) ? Visibility.Visible : Visibility.Collapsed;
-  }
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return value.Equals(true) ? Visibility.Visible : Visibility.Collapsed;
+    }
 
-  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-  {
-    throw new NotImplementedException();
-  }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
 }
 ```
 #### ConverterResource.xaml
@@ -79,15 +79,15 @@ public class BooleanToVisibilityConverter : IValueConverter
 #### Style
 ```xaml
 <Style TargetType="{x:Type TextBlock}" x:Key="TXB.HELLO">
-  <Setter Property="Grid.Row" Value="0"/>
-  <Setter Property="Text" Value="Hello!"/>
-  <Setter Property="Foreground" Value="#EFE6D4"/>
-  <Setter Property="FontWeight" Value="Bold"/>
-  <Setter Property="FontSize" Value="18"/>
-  <Setter Property="HorizontalAlignment" Value="Left"/>
-  <Setter Property="Margin" Value="100 22 0 0"/>
-  <Setter Property="Visibility" Value="{Binding ElementName=tgl, Path=IsChecked, 
-  	  				Converter={StaticResource BooleanToVisibilityConverter}}"/>
+    <Setter Property="Grid.Row" Value="0"/>
+    <Setter Property="Text" Value="Hello!"/>
+    <Setter Property="Foreground" Value="#EFE6D4"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="FontSize" Value="18"/>
+    <Setter Property="HorizontalAlignment" Value="Left"/>
+    <Setter Property="Margin" Value="100 22 0 0"/>
+    <Setter Property="Visibility" Value="{Binding ElementName=tgl, Path=IsChecked, 
+  	  				  Converter={StaticResource BooleanToVisibilityConverter}}"/>
 </Style>
 ```
 
