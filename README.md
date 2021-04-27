@@ -86,7 +86,8 @@ public class BooleanToVisibilityConverter : IValueConverter
   <Setter Property="FontSize" Value="18"/>
   <Setter Property="HorizontalAlignment" Value="Left"/>
   <Setter Property="Margin" Value="100 22 0 0"/>
-  <Setter Property="Visibility" Value="{Binding ElementName=tgl, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+  <Setter Property="Visibility" Value="{Binding ElementName=tgl, Path=IsChecked, 
+  	  Converter={StaticResource BooleanToVisibilityConverter}}"/>
 </Style>
 ```
 
