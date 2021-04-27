@@ -73,7 +73,7 @@ public class BooleanToVisibilityConverter : IValueConverter
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:cvt="clr-namespace:IValueConverterSample.Converters">
-	<cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    <cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 </ResourceDictionary>
 ```
 #### Style
@@ -90,8 +90,58 @@ public class BooleanToVisibilityConverter : IValueConverter
   	  				  Converter={StaticResource BooleanToVisibilityConverter}}"/>
 </Style>
 ```
+#### Result
+|`IsChecked`=true|`IsChecked`=false|
+|----------------|-----------------|
+|image1|image2|
+
+<br />
 
 ### StringFormatConverter
+#### Converter.cs
+```csharp
+public class StringFormatConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return string.Format("{0:N0}%", value);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+```
+#### ConverterResource.xaml
+```xaml
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cvt="clr-namespace:IValueConverterSample.Converters">
+    <cvt:StringFormatConverter x:Key="StringFormatConverter"/>
+</ResourceDictionary>
+```
+#### Style
+```xaml
+...
+<Style TargetType="{x:Type TextBlock}" x:Key="IN.CONTENT">
+    <Setter Property="Grid.Column" Value="1"/>
+    <Setter Property="Foreground" Value="#9B9688"/>
+    <Setter Property="FontSize" Value="13"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="HorizontalAlignment" Value="Left"/>
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="Margin" Value="10 20 0 0"/>
+    <Setter Property="Text" Value="{Binding ElementName=slider2, Path=Value, Converter={StaticResource StringFormatConverter}}"/>
+</Style>
+...
+```
+
+#### Result
+...
+
+<br />
+
 ### MultiValueConverter
 
 ***
