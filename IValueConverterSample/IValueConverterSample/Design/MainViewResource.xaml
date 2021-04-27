@@ -112,6 +112,7 @@
 	</Style>
 
 	<Style TargetType="{x:Type Slider}" x:Key="SLD.INPUT">
+		<Setter Property="Grid.Column" Value="0"/>
 		<Setter Property="IsMoveToPointEnabled" Value="True"/>
 		<Setter Property="IsSnapToTickEnabled" Value="True"/>
 		<Setter Property="TickFrequency" Value="0.01"/>
@@ -122,10 +123,10 @@
 		<Setter Property="MinHeight" Value="26"/>
 		<Setter Property="MaxHeight" Value="26"/>
 		<Setter Property="Height" Value="26"/>
-		<Setter Property="Width" Value="460"/>
+		<Setter Property="Width" Value="300"/>
 		<Setter Property="HorizontalAlignment" Value="Left"/>
 		<Setter Property="VerticalAlignment" Value="Center"/>
-		<Setter Property="Margin" Value="0 5 0 0"/>
+		<Setter Property="Margin" Value="20 20 0 0"/>
 		<Setter Property="Value" Value="20"/>
 		<Setter Property="Focusable" Value="False"/>
 		<Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
@@ -206,16 +207,23 @@
 				<ControlTemplate TargetType="{x:Type Control}">
 					<ControlTemplate.Resources>
 						<Style TargetType="{x:Type TextBlock}" x:Key="IN.CONTENT">
+							<Setter Property="Grid.Column" Value="1"/>
 							<Setter Property="Foreground" Value="#9B9688"/>
 							<Setter Property="FontSize" Value="13"/>
+							<Setter Property="FontWeight" Value="Bold"/>
 							<Setter Property="HorizontalAlignment" Value="Left"/>
 							<Setter Property="VerticalAlignment" Value="Center"/>
+							<Setter Property="Margin" Value="10 20 0 0"/>
 							<Setter Property="Text" Value="{Binding ElementName=slider2, Path=Value, Converter={StaticResource StringFormatConverter}}"/>
 						</Style>
 					</ControlTemplate.Resources>
 					<Grid>
-						<TextBlock Style="{StaticResource IN.CONTENT}"/>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
 						<Slider x:Name="slider2" Style="{StaticResource SLD.INPUT}"/>
+						<TextBlock Style="{StaticResource IN.CONTENT}"/>
 					</Grid>
 				</ControlTemplate>
 			</Setter.Value>
