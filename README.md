@@ -52,7 +52,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ***
 
 ## Sample
-### BooleanToVisibilityConverter
+### `BooleanToVisibilityConverter`
 #### Converter.cs
 ```c#
 public class BooleanToVisibilityConverter : IValueConverter
@@ -95,9 +95,7 @@ public class BooleanToVisibilityConverter : IValueConverter
 |----------------|-----------------|
 |image1|image2|
 
-<br />
-
-### StringFormatConverter
+### `StringFormatConverter`
 #### Converter.cs
 ```csharp
 public class StringFormatConverter : IValueConverter
@@ -140,9 +138,7 @@ public class StringFormatConverter : IValueConverter
 #### Result
 ...
 
-<br />
-
-### MultiValueConverter
+### `MultiValueConverter`
 
 ***
 
