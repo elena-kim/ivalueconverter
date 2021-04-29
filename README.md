@@ -68,13 +68,14 @@ public class BooleanToVisibilityConverter : IValueConverter
     }
 }
 ```
-##### `ConverterResource.xaml`
+##### `Namespace`
 ```xaml
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:cvt="clr-namespace:IValueConverterSample.Converters">
-    <cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-</ResourceDictionary>
+xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
+```
+
+##### `Resource`
+```xaml
+<cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 ```
 ##### `Style`
 ```xaml
@@ -111,14 +112,16 @@ public class StringFormatConverter : IValueConverter
     }
 }
 ```
-##### `ConverterResource.xaml`
+##### `Namespace`
 ```xaml
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:cvt="clr-namespace:IValueConverterSample.Converters">
-    <cvt:StringFormatConverter x:Key="StringFormatConverter"/>
-</ResourceDictionary>
+xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 ```
+
+##### `Resource`
+```xaml
+<cvt:StringFormatConverter x:Key="StringFormatConverter"/>
+```
+
 ##### `Style`
 ```xaml
 ...
