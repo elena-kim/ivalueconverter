@@ -112,6 +112,8 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
     </tbody>
 </table>
 
+<br />
+
 ### StringFormatConverter
 ##### `Converter.cs`
 ```csharp
@@ -148,12 +150,15 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
     <Setter Property="HorizontalAlignment" Value="Left"/>
     <Setter Property="VerticalAlignment" Value="Center"/>
     <Setter Property="Margin" Value="10 20 0 0"/>
-    <Setter Property="Text" Value="{Binding ElementName=slider2, Path=Value, Converter={StaticResource StringFormatConverter}}"/>
+    <Setter Property="Text" Value="{Binding ElementName=slider2, Path=Value, 
+                                            Converter={StaticResource StringFormatConverter}}"/>
 </Style>
 ```
 
 ##### `Result`
 <img src="https://user-images.githubusercontent.com/74305823/116886718-610ed080-ac64-11eb-9c08-8c48a28c63e9.png" width="400"/>
+
+<br />
 
 ### MultiValueConverter
 ##### `Converter.cs`
@@ -195,7 +200,6 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
         </Setter.Value>
     </Setter>
 </Style>
-...
 ```
 
 ##### `Result`
