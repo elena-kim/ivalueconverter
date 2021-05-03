@@ -5,13 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Style="{StaticResource WIN.MAIN}">
     <Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
-		<ToggleButton x:Name="tgl" Style="{StaticResource TGL.CLICK}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <ToggleButton x:Name="tgl" Style="{StaticResource TGL.CLICK}"/>
 		<TextBlock Style="{StaticResource TXB.HELLO}"/>
 
-		<Control Style="{StaticResource IN.INPUT}"/>
-	</Grid>
+        <Control Style="{StaticResource CTL.INPUT}"/>
+
+        <Border Style="{StaticResource BDR.MAIN}">
+            <Grid Style="{StaticResource GRD.MAIN}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource TBX.INFO}"/>
+                <StackPanel Style="{StaticResource STACK.MAIN}">
+                    <RadioButton Style="{StaticResource RDO.AGREE}"/>
+                    <RadioButton Style="{StaticResource RDO.DISAGREE}"/>
+                </StackPanel>
+                <TextBlock Style="{StaticResource TBX.NAME}"/>
+                <TextBox Style="{StaticResource TXT.NAME}"/>
+            </Grid>
+        </Border>
+    </Grid>
 </Window>
