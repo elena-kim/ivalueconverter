@@ -3,4 +3,5 @@
                     xmlns:cvt="clr-namespace:IValueConverterSample.Converters">
 	<cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 	<cvt:StringFormatConverter x:Key="StringFormatConverter"/>
+    <cvt:MultiValueBooleanConverter x:Key="MultiValueBooleanConverter"/>
 </ResourceDictionary>

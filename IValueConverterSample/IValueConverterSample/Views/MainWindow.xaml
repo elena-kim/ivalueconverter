@@ -25,11 +25,12 @@
                 </Grid.RowDefinitions>
                 <TextBlock Style="{StaticResource TBX.INFO}"/>
                 <StackPanel Style="{StaticResource STACK.MAIN}">
-                    <RadioButton Style="{StaticResource RDO.AGREE}"/>
-                    <RadioButton Style="{StaticResource RDO.DISAGREE}"/>
+                    <RadioButton x:Name="rdo1" Style="{StaticResource RDO.AGREE}"/>
+                    <RadioButton x:Name="rdo2" Style="{StaticResource RDO.DISAGREE}"/>
                 </StackPanel>
                 <TextBlock Style="{StaticResource TBX.NAME}"/>
-                <TextBox Style="{StaticResource TXT.NAME}"/>
+                <TextBox x:Name="txt" Style="{StaticResource TXT.NAME}"/>
+                <ToggleButton Style="{StaticResource TGL.ACCEPT}"/>
             </Grid>
         </Border>
     </Grid>
