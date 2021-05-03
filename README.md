@@ -140,7 +140,6 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 ##### `Style`
 ```xaml
-...
 <Style TargetType="{x:Type TextBlock}" x:Key="IN.CONTENT">
     <Setter Property="Grid.Column" Value="1"/>
     <Setter Property="Foreground" Value="#9B9688"/>
@@ -151,7 +150,6 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
     <Setter Property="Margin" Value="10 20 0 0"/>
     <Setter Property="Text" Value="{Binding ElementName=slider2, Path=Value, Converter={StaticResource StringFormatConverter}}"/>
 </Style>
-...
 ```
 
 ##### `Result`
@@ -159,14 +157,72 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 ### MultiValueConverter
 ##### `Converter.cs`
-.....
+```csharp
+public class MultiValueBooleanConverter : IMultiValueConverter
+{
+    public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
+    {
+        return ((bool)values[0] == true && !string.IsNullOrWhiteSpace(values[1]?.ToString()));
+    }
+
+    public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+```
+
 ##### `Namespace`
+```xaml
+xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
+```
+
+##### `Resource`
+```xaml
+<cvt:MultiValueBooleanConverter x:Key="MultiValueBooleanConverter"/>
+```
+
+##### `Style`
+```xaml
+<Style TargetType="{x:Type ToggleButton}" x:Key="TGL.ACCEPT" BasedOn="{StaticResource TGL.BASE}">
+    ...
+    <Setter Property="IsEnabled">
+        <Setter.Value>
+            <MultiBinding Converter="{StaticResource MultiValueBooleanConverter}">
+                <Binding ElementName="rdo1" Path="IsChecked"/>
+                <Binding ElementName="txt" Path="Text"/>
+            </MultiBinding>
+        </Setter.Value>
+    </Setter>
+</Style>
 ...
+```
+
+##### `Result`
+
+<table>
+    <thead>
+        <tr>
+            <th>'IsEnabled' = true</th>
+            <th>'IsEnabled' = false</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">
+                <img src="https://user-images.githubusercontent.com/74305823/116887455-49841780-ac65-11eb-80be-f7908e63d214.png" width="400"/>
+            </td>
+            <td align="center">
+                <img src="https://user-images.githubusercontent.com/74305823/116887338-2c4f4900-ac65-11eb-915e-d7231bacc1d1.png" width="400"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ***
 
 ## Reference
-[:bookmark_tabs:](https://www.codeproject.com/Tips/868163/IValueConverter-Example-and-Usage-in-WPF) **CODE PROJECT** &nbsp; <ins>IValueConverter Example and Usage in WPF</ins>  
+[:bookmark_tabs:](https://www.codeproject.com/Tips/868163/IValueConverter-Example-and-Usage-in-WPF) **CODE PROJECT** &nbsp; <ins>IValueConverter Example and Usage in WPF</ins> 
 [:bookmark_tabs:](https://docs.microsoft.com/en-ca/dotnet/api/system.windows.data.ivalueconverter?view=net-5.0) **Microsoft Docs** &nbsp; <ins>IValueConverter Interface</ins>  
 [:bookmark_tabs:](https://www.wpf-tutorial.com/data-binding/value-conversion-with-ivalueconverter/) **WPF Tutorial** &nbsp; <ins>Value conversion with IValueConverter</ins>
 
