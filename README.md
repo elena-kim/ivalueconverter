@@ -16,27 +16,6 @@ You can always share information with us and we are looking forward to it.
 
 ## IValueConverter
 
-<div align=center>
-    <table>
-        <thead>
-            <tr>
-                <th>Namespace</th>
-                <th>Assembly</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="center">
-                    System.Windows.Data
-                </td>
-                <td align="center">
-                    PresentationFramework.dll
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
 |Namespace|Assembly|
 |:--------:|:-------:|
 |`System.Windows.Data`|`PresentationFramework.dll`|
