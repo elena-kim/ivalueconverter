@@ -222,7 +222,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 ***
 
 ## Reference
-[:bookmark_tabs:](https://www.codeproject.com/Tips/868163/IValueConverter-Example-and-Usage-in-WPF) **CODE PROJECT** &nbsp; <ins>IValueConverter Example and Usage in WPF</ins> 
+[:bookmark_tabs:](https://www.codeproject.com/Tips/868163/IValueConverter-Example-and-Usage-in-WPF) **CODE PROJECT** &nbsp; <ins>IValueConverter Example and Usage in WPF</ins>  
 [:bookmark_tabs:](https://docs.microsoft.com/en-ca/dotnet/api/system.windows.data.ivalueconverter?view=net-5.0) **Microsoft Docs** &nbsp; <ins>IValueConverter Interface</ins>  
 [:bookmark_tabs:](https://www.wpf-tutorial.com/data-binding/value-conversion-with-ivalueconverter/) **WPF Tutorial** &nbsp; <ins>Value conversion with IValueConverter</ins>
 
