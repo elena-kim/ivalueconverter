@@ -17,7 +17,7 @@ You can always share information with us and we are looking forward to it.
 ## IValueConverter
 
 |Namespace|Assembly|
-|:--------|:-------|
+|:--------:|:-------:|
 |`System.Windows.Data`|`PresentationFramework.dll`|
 
 Value converters provides a way to apply custom logic to a [binding](https://github.com/devncore/wpf-xaml-binding).  
