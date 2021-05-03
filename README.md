@@ -92,9 +92,25 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 </Style>
 ```
 ##### `Result`
-|`IsChecked`=true|`IsChecked`=false|
-|----------------|-----------------|
-|image1|image2|
+
+<table>
+    <thead>
+        <tr>
+            <th>'IsChecked' = true</th>
+            <th>'IsChecked' = false</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">
+                <img src="https://user-images.githubusercontent.com/74305823/116886059-949d2b00-ac63-11eb-9885-725f440d7cd2.png" width="100"/>
+            </td>
+            <td align="center">
+                <img src="https://user-images.githubusercontent.com/74305823/116886656-4b99a680-ac64-11eb-8b89-4d6945cd5306.png" width="100"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### StringFormatConverter
 ##### `Converter.cs`
@@ -139,7 +155,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 ```
 
 ##### `Result`
-...
+<img src="https://user-images.githubusercontent.com/74305823/116886718-610ed080-ac64-11eb-9c08-8c48a28c63e9.png" width="400"/>
 
 ### MultiValueConverter
 ##### `Converter.cs`
