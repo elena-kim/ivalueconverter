@@ -52,7 +52,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ***
 
 ## Sample
-<img src="https://user-images.githubusercontent.com/74305823/116888678-b77d0e80-ac66-11eb-9c5b-4f42d2f31b9d.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/74305823/116888826-de3b4500-ac66-11eb-8f51-b93b9e7ec05d.png" width="500"/>
 
 ### :pushpin: BooleanToVisibilityConverter
 ##### `Converter.cs`
