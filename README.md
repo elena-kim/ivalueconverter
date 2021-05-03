@@ -52,7 +52,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ***
 
 ## Sample
-### BooleanToVisibilityConverter
+### :pushpin: BooleanToVisibilityConverter
 ##### `Converter.cs`
 ```c#
 public class BooleanToVisibilityConverter : IValueConverter
@@ -114,7 +114,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 <br />
 
-### StringFormatConverter
+### :pushpin: StringFormatConverter
 ##### `Converter.cs`
 ```csharp
 public class StringFormatConverter : IValueConverter
@@ -160,7 +160,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 <br />
 
-### MultiValueConverter
+### :pushpin: MultiValueConverter
 ##### `Converter.cs`
 ```csharp
 public class MultiValueBooleanConverter : IMultiValueConverter
@@ -222,6 +222,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
         </tr>
     </tbody>
 </table>
+<br />
 
 ***
 
