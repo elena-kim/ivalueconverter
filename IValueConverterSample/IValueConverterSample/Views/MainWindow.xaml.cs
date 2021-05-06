@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IValueConverterSample.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace IValueConverterSample
 		public MainWindow()
 		{
 			InitializeComponent();
+			DataContext = new MainViewModel();
 		}
 	}
 }

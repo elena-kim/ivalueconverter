@@ -16,22 +16,22 @@
 
         <Control Style="{StaticResource CTL.INPUT}"/>
 
-        <Border Style="{StaticResource BDR.MAIN}">
-            <Grid Style="{StaticResource GRD.MAIN}">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Style="{StaticResource TBX.INFO}"/>
-                <StackPanel Style="{StaticResource STACK.MAIN}">
-                    <RadioButton x:Name="rdo1" Style="{StaticResource RDO.AGREE}"/>
-                    <RadioButton x:Name="rdo2" Style="{StaticResource RDO.DISAGREE}"/>
-                </StackPanel>
-                <TextBlock Style="{StaticResource TBX.NAME}"/>
-                <TextBox x:Name="txt" Style="{StaticResource TXT.NAME}"/>
-                <ToggleButton Style="{StaticResource TGL.ACCEPT}"/>
-            </Grid>
-        </Border>
-    </Grid>
+		<Border Style="{StaticResource BDR.MAIN}">
+			<Grid Style="{StaticResource GRD.MAIN}">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<TextBlock Style="{StaticResource TBX.INFO}"/>
+				<StackPanel Style="{StaticResource STACK.MAIN}">
+					<RadioButton x:Name="rdo1" Style="{StaticResource RDO.AGREE}"/>
+					<RadioButton x:Name="rdo2" Style="{StaticResource RDO.DISAGREE}"/>
+				</StackPanel>
+				<TextBlock Style="{StaticResource TBX.NAME}"/>
+				<TextBox x:Name="txt" Style="{StaticResource TXT.NAME}"/>
+				<ToggleButton Style="{StaticResource TGL.ACCEPT}"/>
+			</Grid>
+		</Border>
+	</Grid>
 </Window>

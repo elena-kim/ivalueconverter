@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Controls\DevncoreIcon.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\FileSizeToFormatConverter.cs" />
     <Compile Include="Converters\MultiValueBooleanConverter.cs" />
     <Compile Include="Converters\StringFormatConverter.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />

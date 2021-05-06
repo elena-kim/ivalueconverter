@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\devncore\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\
+C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\obj\Debug\
 IValueConverterSample
 none
 false
 DEBUG;TRACE
-C:\devncore\ivalueconverter\IValueConverterSample\IValueConverterSample\App.xaml
+C:\github\ivalueconverter\IValueConverterSample\IValueConverterSample\App.xaml
 61412728462
 
-10-1742120143
+11-1005634726
 13152784993
 Template\ColorResource.xaml;Template\IconResource.xaml;Design\MainViewResource.xaml;Template\ConverterResource.xaml;Template\PathResource.xaml;Views\MainWindow.xaml;
 
