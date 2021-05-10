@@ -54,7 +54,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ## Sample
 #### :point_right: [Download](https://github.com/devncore/ivalueconverter/archive/refs/heads/main.zip)  
 
-<img src="https://user-images.githubusercontent.com/74305823/116888826-de3b4500-ac66-11eb-8f51-b93b9e7ec05d.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/74305823/117662030-0f24f800-b1da-11eb-8f97-327c3d419756.png" width="500"/>
 
 ### :pushpin: BooleanToVisibilityConverter
 ##### `Converter.cs`
@@ -226,6 +226,65 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
         </tr>
     </tbody>
 </table>
+<br />
+
+### :pushpin: FileSizeToFormatConverter
+##### `Converter.cs`
+```c#
+public class FileSizeToFormatConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        string[] sizes = { "B", "KB", "MB", "GB", "TB" };
+        long len = 0;
+        if (value.ToString() != "")
+		{
+            len = long.Parse(value.ToString());
+		}
+
+        int order = 0;
+        while (len >= 1024 && order < sizes.Length - 1)
+        {
+            order++;
+            len = len / 1024;
+        }
+
+        // Adjust the format string to your preferences. For example "{0:0.#}{1}" would
+        // show a single decimal place, and no space.
+        return String.Format("({0:0.##} {1})", len, sizes[order]);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+```
+
+##### `Namespace`
+```xaml
+xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
+```
+
+##### `Resource`
+```xaml
+<cvt:FileSizeToFormatConverter x:Key="FileSizeToFormatConverter"/>
+```
+
+##### `Style`
+```xaml
+<Grid>
+    <Grid.ColumnDefinitions>
+	    <ColumnDefinition Width="*"/>
+	    <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <TextBlock Grid.Column="0" Text="{Binding Name}"/>
+    <TextBlock Grid.Column="1" Text="{Binding Length, Converter={StaticResource FileSizeToFormatConverter}}"/>
+</Grid>
+```
+
+##### `Result`
+<img src="https://user-images.githubusercontent.com/74305823/117662606-b4d86700-b1da-11eb-8eae-f5af7183bdc4.png" width="350"/>  
 <br />
 
 ***
