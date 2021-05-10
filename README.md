@@ -238,9 +238,9 @@ public class FileSizeToFormatConverter : IValueConverter
         string[] sizes = { "B", "KB", "MB", "GB", "TB" };
         long len = 0;
         if (value.ToString() != "")
-		{
+        {
             len = long.Parse(value.ToString());
-		}
+        }
 
         int order = 0;
         while (len >= 1024 && order < sizes.Length - 1)
