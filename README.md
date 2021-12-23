@@ -56,11 +56,11 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ***
 
 ## Sample
-#### :point_right: [Download](https://github.com/devncore/ivalueconverter/archive/refs/heads/main.zip)  
+#### 👉 [Download](https://github.com/devncore/ivalueconverter/archive/refs/heads/main.zip)  
 
 <img src="https://user-images.githubusercontent.com/74305823/117662030-0f24f800-b1da-11eb-8f97-327c3d419756.png" width="500"/>
 
-### :pushpin: BooleanToVisibilityConverter
+### 📌 BooleanToVisibilityConverter
 ##### `Converter.cs`
 ```c#
 public class BooleanToVisibilityConverter : IValueConverter
@@ -122,7 +122,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 <br />
 
-### :pushpin: StringFormatConverter
+### 📌 StringFormatConverter
 ##### `Converter.cs`
 ```csharp
 public class StringFormatConverter : IValueConverter
@@ -168,7 +168,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 
 <br />
 
-### :pushpin: MultiValueConverter
+### 📌 MultiValueConverter
 ##### `Converter.cs`
 ```csharp
 public class MultiValueBooleanConverter : IMultiValueConverter
@@ -232,7 +232,7 @@ xmlns:cvt="clr-namespace:IValueConverterSample.Converters"
 </table>
 <br />
 
-### :pushpin: FileSizeToFormatConverter
+### 📌 FileSizeToFormatConverter
 ##### `Converter.cs`
 ```c#
 public class FileSizeToFormatConverter : IValueConverter
