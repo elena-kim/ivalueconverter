@@ -14,10 +14,8 @@
    <img src="https://img.shields.io/github/license/devncore/ivalueconverter" alt="License">
    <a href="https://github.com/devncore/ivalueconverter/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/ivalueconverter" alt="Commits-per-month"></a>
  </p>
-</div>
-
   <br />
-  
+</div>  
 ## Overview
 
 |Namespace|Assembly|
