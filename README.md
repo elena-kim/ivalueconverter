@@ -1,4 +1,4 @@
-<div align=center>
+<div class="devncore-github-intro" align=center>
   <h2>WPF IValueConverter</h2>
   <br/>
  
