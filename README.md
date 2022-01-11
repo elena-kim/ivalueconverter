@@ -1,17 +1,13 @@
-<div name="devncore-github-intro" test="123" align=center>
-  <h2>WPF IValueConverter</h2>
-  <br/>
-  이 레포지토리는 DevNcore팀이 관리하고 있습니다.
-  <br />
-  <a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
-  <br />
-  <br />
-  <p align="center">
-   <a href="https://github.com/devncore/ivalueconverter/stargazers"><img src="https://img.shields.io/github/stars/devncore/ivalueconverter" alt="Github Stars"></a>
-   <img src="https://img.shields.io/github/license/devncore/ivalueconverter" alt="License">
-   <a href="https://github.com/devncore/ivalueconverter/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/ivalueconverter" alt="Commits-per-month"></a>
- </p>
-</div>  
+## Xaml Binding
+  
+이 리포지토리는 IValueConverter 개념과 기술을 활용하는데 필요한 설명을 다루는 Article입니다.
+
+<a href="https://github.com/devncore/devncore"><strong>이 글의 Contributors »</strong></a>
+  
+| Star | License | Activity |
+|:----:|:-------:|:--------:|
+| <a href="https://github.com/devncore/ivalueconverter/stargazers"><img src="https://img.shields.io/github/stars/devncore/ivalueconverter" alt="Github Stars"></a> | <img src="https://img.shields.io/github/license/devncore/ivalueconverter" alt="License"> | <a href="https://github.com/devncore/wpf-xaml-binding/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/ivalueconverter" alt="Commits-per-month"></a> |
+  
 
 ## Overview
 
