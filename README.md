@@ -37,7 +37,7 @@ public object ConvertBack (object value, Type targetType, object parameter, Cult
 ***
 
 ## Sample
-👉 [Download](https://github.com/devncore/ivalueconverter/archive/refs/heads/main.zip)  
+👉 [Download](https://github.com/elena-kim/ivalueconverter/archive/refs/heads/main.zip)  
 
 <img src="https://user-images.githubusercontent.com/74305823/117662030-0f24f800-b1da-11eb-8f97-327c3d419756.png" width="500"/>
 
