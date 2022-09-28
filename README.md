@@ -1,16 +1,5 @@
-## IValueConverter 컨버터
-  
-이 리포지토리는 IValueConverter 개념과 기술을 활용하는데 필요한 설명을 다루는 Article입니다.
+## IValueConverter 
 
-<a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
-  
-| Star | License | Activity |
-|:----:|:-------:|:--------:|
-| <a href="https://github.com/devncore/ivalueconverter/stargazers"><img src="https://img.shields.io/github/stars/devncore/ivalueconverter" alt="Github Stars"></a> | <img src="https://img.shields.io/github/license/devncore/ivalueconverter" alt="License"> | <a href="https://github.com/devncore/wpf-xaml-binding/pulse"><img src="https://img.shields.io/github/commit-activity/m/devncore/ivalueconverter" alt="Commits-per-month"></a> |
-
-<br />
-
-## 내용
 
 |Namespace|Assembly|
 |:--------:|:-------:|
